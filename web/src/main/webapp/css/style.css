@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+}
+
+.logo {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 90px;
+    display: flex;
+    background-color: #fff;
+}
+
+.span{
+    font-size: 18px;
+}
+
+.span_container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 30vh;
+    margin-right: 10px;
+}
+
+#container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+.banner {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 33vh;
+    align-items: center;
+}
+
+.bannerText {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    margin-top: 86px;
+}
+
+.formWrapper {
+    position: absolute;
+    top: 30vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding: 32px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 6px #0000001a;
+}
+
+.noGutter {
+    margin: 0;
+    padding: 0;
+}
+.formHeader {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.searchBar {
+    background-color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #D9D9D9;
+    width: 500px;
+}
+.searchBtn {
+    display: inherit;
+    padding: 7px 15px;
+    width: 500px;
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid #F9661E;
+    background: #F9661E;
+    box-shadow: 0 2px #0000000a;
+    color: #fff;
+    cursor: pointer;
+}
+
+hr {
+    border: 2px solid #D9D9D9;
+}

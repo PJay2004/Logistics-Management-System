@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+    <persistence-unit name="WebPU" transaction-type="JTA">
+        <jta-data-source>jdbc/logistics</jta-data-source>
+        <class>com.poorna.ejb.entity.User</class>
+        <class>com.poorna.ejb.entity.Order</class>
+        <class>com.poorna.ejb.entity.Account</class>
+        <class>com.poorna.ejb.entity.Admin</class>
+        <properties>
+<!--            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>-->
+<!--            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/logistics?useSSl=false"/>-->
+<!--            <property name="jakarta.persistence.jdbc.user" value="root"/>-->
+<!--            <property name="jakarta.persistence.jdbc.password" value="Poorna123"/>-->
+<!--            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>-->
+<!--            <property name="hibernate.hbm2ddl.auto" value="update"/>-->
+            <property name="jakarta.persistence.schema-generation.database.action" value="create"/>
+        </properties>
+        <shared-cache-mode>DISABLE_SELECTIVE</shared-cache-mode>
+    </persistence-unit>
+</persistence>
